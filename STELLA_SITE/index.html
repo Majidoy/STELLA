@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Stella</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="src/Logo.ico" type="image/x-icon" style="border: 2px solid #000000;">
+</head>
+<body>
+    <div class="background"></div>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">
+                <img src="src/Logo.ico" alt="Logo de votre site">
+                Projet Stella
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#dashboard">Tableau de bord</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#gallery">Galerie</a></li>
+                    <li><a href="#pdf-section">Documentation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+    <main>
+        <section id="home">
+            <div class="home-container">
+                <div class="grid-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ineJUzsiLbA?si=Ev4Rxs6fPzOqwRwe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+                <div class="home-text">
+                    <h2>Accueil</h2>
+                    <p>
+                        Au coeur de notre site, nous entreprendrons le récit détaillé de la conception d'un prototype de nanosatellite, inscrit dans notre ambitieux projet Stella. Ce compte rendu exhaustif plongera le lecteur au cœur du processus créatif et technique qui sous-tend la réalisation de ce CubeSat-1U. 
+                    </p>
+                    <p>
+                        Chaque étape, de la conception initiale à l'intégration des composants essentiels, sera scrupuleusement explorée, offrant ainsi un aperçu complet du travail acharné, de l'innovation et de la rigueur nécessaires pour concrétiser notre vision. 
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="dashboard">
+            <h2>Tableau de Bord</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Température</h3>
+                    <div id="temp-display" class="data-bubble">Loading data...</div>
+                </div>
+                <div class="card">
+                    <h3>Vitesse / Accélération</h3>
+                    <div id="speed-display" class="data-bubble">Loading data...</div>
+                </div>
+                <div class="card">
+                    <h3>Altitude</h3>
+                    <div id="altitude-display" class="data-bubble">Loading data...</div>
+                </div>
+                <div class="card">
+                    <h3>Luminosité</h3>
+                    <div id="brightness-low-display" class="data-bubble">Bas: Loading data...</div>
+                    <div id="brightness-high-display" class="data-bubble">Haut: Loading data...</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team">
+            <h2>Notre Équipe</h2>
+            <div class="team-container">
+                <a href="https://www.linkedin.com/in/abouhamdane/" target="_blank"><div class="team-card">
+                    <img src="src/CV_Photo.jpg" alt="Membre 1">
+                    <h3>Abdelmajid Bouhamdane</h3>
+                    <p>Chef de projet</p>
+                </div></a>
+                <a href="https://www.linkedin.com/in/quentin-gely-290095236/" target="_blank"><div class="team-card">
+                    <img src="src/Quentin.jpg" alt="Membre 2">
+                    <h3>Quentin Gely</h3>
+                    <p>Responsable Energie</p>
+                </div></a>
+                <a href="https://www.linkedin.com" target="_blank"><div class="team-card">
+                    <img src="src/Adrien.png" alt="Membre 3">
+                    <h3>Adrien Petit</h3>
+                    <p>Responsable PCB</p>
+                </div></a>
+                <a href="https://www.linkedin.com" target="_blank"><div class="team-card">
+                    <img src="" alt="Membre 4">
+                    <h3>Eliott Kerzerndorfer</h3>
+                    <p> Responsable CAO</p>
+                </div></a>
+            </div>
+        </section>
+        
+
+        <section id="gallery">
+            <h2>Galerie de Satellites</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="src/IMG-20240609-WA0007.jpg" alt="Image 1">
+                </div>
+                <div class="grid-item">
+                    <img src="src/GOPR0047.JPG" alt="Image 2">
+                </div>
+                <div class="grid-item">
+                    <img src="src/GOPR0064.JPG" alt="Image 3">
+                </div>
+                <div class="grid-item">
+                    <img src="src/CubeSAT.jpg" alt="Image 4">
+                </div>
+            </div>
+        </section>
+        
+        <section id="pdf-section">
+            <h2>Téléchargez nos documents</h2>
+            <div class="pdf-buttons">
+                <button class="pdf-button" onclick="window.open('document1.pdf', '_blank')">Document 1</button>
+                <button class="pdf-button" onclick="window.open('src/STELLA_Project-3.pdf', '_blank')">Schéma PCB</button>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Projet Stella. Tous droits réservés.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

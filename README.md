@@ -16,7 +16,7 @@ Clone the repository:
 
 sh
 
-git clone https://github.com/Majidoy/STELLA_SITE.git
+git clone https://github.com/Majidoy/STELLA.git
 
 Navigate to the project directory:
 
